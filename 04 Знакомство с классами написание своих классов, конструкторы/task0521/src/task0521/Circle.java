@@ -30,8 +30,11 @@ public class Circle {
     }
 
     public Circle(double x, double y) {
-        //напишите тут ваш код
+        this.x = x;
+        this.y = y;
+        this.radius = 10;
     }
+    https://metanit.com/java/tutorial/3.1.php
 
     public Circle() {
         this(5, 5, 1);
