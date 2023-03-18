@@ -22,10 +22,19 @@ Requirements:
 public class Solution {
     public static void main(String[] args) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int maximum = ;
+        int maximum = 0;
+        int number = 0;
+        do {
+            System.out.print("Введите число: ");
+            number = Integer.parseInt(reader.readLine());
+        }
+        while (number <= 0);
 
-        //напишите тут ваш код
-
+        for (int x = 0; x < number; x++) {
+            System.out.printf("Введите %d-ое число: ", (x + 1));
+            int num = Integer.parseInt(reader.readLine());
+            maximum = Math.max(maximum, num);
+        }
         System.out.println(maximum);
     }
 }

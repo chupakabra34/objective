@@ -26,7 +26,8 @@ public class Circle {
         System.out.println(circle.color.getDescription());
     }
 
-    public void Circle() {
+    //Ошибка была в void
+    public Circle() {
         color = new Color();
     }
 

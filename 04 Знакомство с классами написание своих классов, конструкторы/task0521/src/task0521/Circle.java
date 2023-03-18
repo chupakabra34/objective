@@ -34,7 +34,7 @@ public class Circle {
         this.y = y;
         this.radius = 10;
     }
-    https://metanit.com/java/tutorial/3.1.php
+
 
     public Circle() {
         this(5, 5, 1);
