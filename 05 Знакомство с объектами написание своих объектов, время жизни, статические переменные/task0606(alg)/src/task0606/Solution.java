@@ -29,6 +29,18 @@ public class Solution {
     public static int odd;
 
     public static void main(String[] args) throws IOException {
-        //напишите тут ваш код
+        int number;
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("Введите число: ");
+        int num = Integer.parseInt(reader.readLine());
+        while (num != 0) {
+            number = num % 10;
+            num = num / 10;
+            if (number % 2 == 0) {
+                even++;
+            } else odd++;
+
+        }
+        System.out.printf("Кол-во чётных чисел = %d\nКол-во нечётных чисел = %d", even, odd);
     }
 }

@@ -2,6 +2,7 @@ package task0622;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 /* 
 Числа по возрастанию
@@ -31,8 +32,16 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
+        int[] arr = new int[5];
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-        //напишите тут ваш код
+        for (int x = 0; x < arr.length; x++) {
+            System.out.printf("Введите %d-ое число: ", x + 1);
+            int number = Integer.parseInt(reader.readLine());
+            arr[x] = number;
+        }
+        Arrays.sort(arr);
+        for (int z : arr) {
+            System.out.println(z);
+        }
     }
 }

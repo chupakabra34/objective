@@ -19,5 +19,13 @@ public class Solution {
         printIdea(new Idea());
     }
 
-    //напишите тут ваш код
+    public static class Idea{
+        public String getDescription(String str){
+            return str;
+        }
+
+    }
+    public static void printIdea(Idea idea){
+        System.out.println(idea.getDescription("Тру-ля-ля"));
+    }
 }
